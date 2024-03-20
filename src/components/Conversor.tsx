@@ -60,7 +60,7 @@ const EbookConverter: React.FC = () => {
 
   return (
     <section className="flex flex-col w-full sm:container gap-4 p-4">
-      <div>
+      <div className="inline space-y-2">
         <Textarea
           id="texto"
           value={texto}
@@ -68,7 +68,7 @@ const EbookConverter: React.FC = () => {
         />
         <Button onClick={handleConverterEPUB}>Converter para EPUB</Button>
       </div>
-      <div>
+      <div className="inline space-y-2">
         <Textarea id="resultado" value={resultado} readOnly />
         <Button onClick={handleCopiarResultado}>Copiar Resultado</Button>
       </div>
